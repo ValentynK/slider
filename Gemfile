@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.1'
-gem 'pg'
+gem 'mysql2'
+gem 'pry'
 
 gem 'uglifier', '>= 1.3.0'
 #gem 'therubyracer', platforms: :ruby
@@ -14,6 +15,9 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'haml-rails'
 
 gem 'bootstrap-sass', '~> 3.0.1.0.rc'
+
+gem 'rmagick'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 
 group :development do

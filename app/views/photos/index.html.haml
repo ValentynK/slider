@@ -1,0 +1,15 @@
+.responsive-slider{"data-autoplay" => "true", "data-spy" => "responsive-slider"}
+  .slides{"data-group" => "slides"}
+    %ul
+      -(0..2).each do |list_count|
+        %li
+          .slide-body{"data-group" => "slide"}
+            -(0..@photo.count-2).each do |image_count|
+              =image_tag @photo[list_count+image_count-1].image.url
+  %a.slider-control.left{"data-jump" => "prev", :href => "#"} <
+  %a.slider-control.right{"data-jump" => "next", :href => "#"} >
+  .pages
+    %a.page{"data-jump-to" => "1", :href => "#"} 1
+    %a.page{"data-jump-to" => "2", :href => "#"} 2
+    %a.page{"data-jump-to" => "3", :href => "#"} 3
+= javascript_include_tag 'jquery.js', 'jquery.event.move', 'responsive-slider.js'

@@ -1,2 +1,6 @@
 .row
   %h1 Hello World
+  =form_for @photo do |form|
+    =form.file_field :image
+    =form.submit
+

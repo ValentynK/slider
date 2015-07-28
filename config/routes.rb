@@ -1,3 +1,4 @@
 RailsAppTemplate::Application.routes.draw do
-  root 'landing#index'
+  root 'photos#new'
+  resources :photos
 end
