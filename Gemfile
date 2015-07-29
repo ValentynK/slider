@@ -5,6 +5,7 @@ ruby '2.2.1'
 gem 'rails', '4.0.1'
 gem 'mysql2'
 gem 'pry'
+gem 'pg'
 
 gem 'uglifier', '>= 1.3.0'
 #gem 'therubyracer', platforms: :ruby
