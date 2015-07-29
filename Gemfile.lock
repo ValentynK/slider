@@ -77,6 +77,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.2)
     mysql2 (0.3.18)
+    pg (0.17.0)
     polyglot (0.3.3)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -144,6 +145,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   paperclip!
+  pg
   pry
   quiet_assets
   rails (= 4.0.1)
