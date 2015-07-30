@@ -2,12 +2,13 @@ class PhotosController < ApplicationController
   respond_to :html, :xml
 
   def index
-    @photo = Photo.all
+    @photos = Photo.all
     #binding.pry
   end
 
   def show
     @photo = Photo.find(params[:id])
+    @photos = Photo.all
   end
 
   def create
@@ -18,7 +19,15 @@ class PhotosController < ApplicationController
   end
 
   def new
-    @photo = Photo.all
+    @photo = Photo.new
+    @photos = Photo.all
+  end
+
+  def destroy
+    @photo = Photo.find(params[:id])
+    @photo.destroy
+
+    respond_with(@photo)
   end
 
   private
