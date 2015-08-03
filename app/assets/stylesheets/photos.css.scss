@@ -20,12 +20,17 @@
   display: inline-block;
   max-width: 100%;
   padding-right: 30px;
+  overflow: hidden;
 }
 .responsive-slider .slides ul li .slide-body {
   display: inline-block;
   position: relative;
-  max-width: 25%;
+  max-width: 400px;
   font-size: 14px;
+}
+.image-slider{
+  overflow: hidden;
+  display: inline-block;
 }
 .responsive-slider .slides ul li .slide-body img {
   max-width: 100%;

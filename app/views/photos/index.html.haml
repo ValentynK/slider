@@ -1,11 +1,11 @@
 .responsive-slider{"data-autoplay" => "true", "data-spy" => "responsive-slider"}
   .slides{"data-group" => "slides"}
     %ul
-      -(0..3).each do |list_count|
+      -(1..2).each do |list_count|
         %li
           .slide-body{"data-group" => "slide"}
-            -(0..@photos.count-1).each do |image_count|
-              =image_tag @photos[list_count+image_count-3].image
+            -(1..@photos.count).each do |image_count|
+              =image_tag @photos[list_count+image_count-3].image, :class=> "image-slider"
   %a.slider-control.left{"data-jump" => "prev", :href => "#"} <
   %a.slider-control.right{"data-jump" => "next", :href => "#"} >
 

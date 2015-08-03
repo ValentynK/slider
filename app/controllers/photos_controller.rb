@@ -3,6 +3,10 @@ class PhotosController < ApplicationController
 
   def index
     @photos = Photo.all
+    @photo_in_slider = []
+      (0..@photos.count).each do |i|
+        @photo_in_slider[i] = @photo[i]+@photo[i+1]+@photo[i+2]+@photo[i+3]
+      end
     #binding.pry
   end
 
